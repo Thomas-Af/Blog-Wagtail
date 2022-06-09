@@ -45,6 +45,7 @@ body {
  align-items: flex-start;
  justify-content: center;
 }
+
 .articleResume {
  display: flex;
  flex-direction: column;
