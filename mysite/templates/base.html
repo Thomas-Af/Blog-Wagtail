@@ -16,6 +16,10 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/mysite.css' %}">
 
@@ -26,8 +30,13 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        <header class="header">
+            <a href="/"><img src="/media/images/logo-wagtail.width-800.jpg" alt="logo"/></a>
+            <a href="/blog">Blog</a>
+        </header>
 
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
